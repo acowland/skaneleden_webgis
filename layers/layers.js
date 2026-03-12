@@ -2,7 +2,7 @@ var wms_layers = [];
 
 
         var lyr_OSMStandard_0 = new ol.layer.Tile({
-            'title': 'OSM Standard',
+            'title': 'OSM Standard Basemap',
             'type':'base',
             'opacity': 1.000000,
             
