@@ -35,9 +35,9 @@ var lyr_stoppesteder_2 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_stoppesteder_2, 
                 style: style_stoppesteder_2,
-                popuplayertitle: 'stoppesteder',
+                popuplayertitle: 'Stoppested',
                 interactive: true,
-                title: '<img src="styles/legend/stoppesteder_2.png" /> stoppesteder'
+                title: '<img src="styles/legend/stoppesteder_2.png" /> Stoppested'
             });
 var format_route_hiking_3 = new ol.format.GeoJSON();
 var features_route_hiking_3 = format_route_hiking_3.readFeatures(json_route_hiking_3, 
@@ -50,18 +50,18 @@ var lyr_route_hiking_3 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_route_hiking_3, 
                 style: style_route_hiking_3,
-                popuplayertitle: 'route_hiking',
+                popuplayertitle: 'Skåneleden',
                 interactive: true,
-                title: '<img src="styles/legend/route_hiking_3.png" /> route_hiking'
+                title: '<img src="styles/legend/route_hiking_3.png" /> Skåneleden'
             });
 var group_Skneleden = new ol.layer.Group({
                                 layers: [lyr_route_hiking_3,],
                                 fold: 'open',
-                                title: 'Skåneleden'});
+                                title: 'Rute'});
 var group_Stoppesteder = new ol.layer.Group({
                                 layers: [lyr_stoppesteder_2,],
                                 fold: 'open',
-                                title: 'Stoppesteder'});
+                                title: 'Stoppested'});
 
 lyr_OSMStandard_0.setVisible(false);lyr_OpenTopoMap_1.setVisible(true);lyr_stoppesteder_2.setVisible(true);lyr_route_hiking_3.setVisible(true);
 var layersList = [lyr_OSMStandard_0,lyr_OpenTopoMap_1,group_Stoppesteder,group_Skneleden];
