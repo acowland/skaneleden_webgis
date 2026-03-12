@@ -52,12 +52,12 @@ var lyr_route_hiking_3 = new ol.layer.Vector({
                 style: style_route_hiking_3,
                 popuplayertitle: 'route_hiking',
                 interactive: true,
-                title: '<img src="styles/legend/route_hiking_3.png" /> Rute'
+                title: '<img src="styles/legend/route_hiking_3.png" /> Skåneleden'
             });
 var group_Skneleden = new ol.layer.Group({
                                 layers: [lyr_route_hiking_3,],
                                 fold: 'open',
-                                title: 'Ruter'});
+                                title: 'Rute'});
 var group_Stoppesteder = new ol.layer.Group({
                                 layers: [lyr_stoppesteder_2,],
                                 fold: 'open',
