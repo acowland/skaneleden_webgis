@@ -2,7 +2,7 @@ var wms_layers = [];
 
 
         var lyr_OSMStandard_0 = new ol.layer.Tile({
-            'title': 'OSM Standard Basemap',
+            'title': 'OSM Standard',
             'type':'base',
             'opacity': 1.000000,
             
@@ -37,7 +37,7 @@ var lyr_stoppesteder_2 = new ol.layer.Vector({
                 style: style_stoppesteder_2,
                 popuplayertitle: 'stoppesteder',
                 interactive: true,
-                title: '<img src="styles/legend/stoppesteder_2.png" /> stoppesteder'
+                title: '<img src="styles/legend/stoppesteder_2.png" /> Stoppested'
             });
 var format_route_hiking_3 = new ol.format.GeoJSON();
 var features_route_hiking_3 = format_route_hiking_3.readFeatures(json_route_hiking_3, 
@@ -52,7 +52,7 @@ var lyr_route_hiking_3 = new ol.layer.Vector({
                 style: style_route_hiking_3,
                 popuplayertitle: 'route_hiking',
                 interactive: true,
-                title: '<img src="styles/legend/route_hiking_3.png" /> route_hiking'
+                title: '<img src="styles/legend/route_hiking_3.png" /> Rute'
             });
 var group_Skneleden = new ol.layer.Group({
                                 layers: [lyr_route_hiking_3,],
