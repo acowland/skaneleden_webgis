@@ -57,11 +57,11 @@ var lyr_route_hiking_3 = new ol.layer.Vector({
 var group_Skneleden = new ol.layer.Group({
                                 layers: [lyr_route_hiking_3,],
                                 fold: 'open',
-                                title: 'Skåneleden'});
+                                title: 'Ruter'});
 var group_Stoppesteder = new ol.layer.Group({
                                 layers: [lyr_stoppesteder_2,],
                                 fold: 'open',
-                                title: 'Stoppesteder'});
+                                title: 'Stoppested'});
 
 lyr_OSMStandard_0.setVisible(false);lyr_OpenTopoMap_1.setVisible(true);lyr_stoppesteder_2.setVisible(true);lyr_route_hiking_3.setVisible(true);
 var layersList = [lyr_OSMStandard_0,lyr_OpenTopoMap_1,group_Stoppesteder,group_Skneleden];
